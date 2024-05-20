@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="register.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bai Jamjuree:wght@400;600&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" />
+  <title>Loge Asi- Register</title>
+</head>
+
+<body>
+  <div class="login-page-default-states-1366">
+    <div class="left">
+      <img class="bg-icon" alt="" src="./public/bg.svg" />
+
+      <div class="start-you-jobs-today-you-can-wrapper">
+        <h2 class="start-you-jobs-container">
+          <p class="start-you-jobs">Start you jobs today,</p>
+          <p class="you-can-do">you can do courses here!</p>
+        </h2>
+      </div>
+      <div class="ellipse-parent">
+        <div class="frame-child"></div>
+        <div class="frame-wrapper">
+          <div class="frame-parent">
+            <div class="ellipse-wrapper">
+              <div class="frame-item"></div>
+            </div>
+            <img class="frame-inner" loading="lazy" alt="" src="./public/group-18.svg" />
+
+            <div class="ellipse-container">
+              <div class="ellipse-div"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="create-account-button">
+      <div class="frame-group">
+        <div class="create-account-parent">
+          <h2 class="create-account">Create account</h2>
+          <div class="for-applying-jobs">For applying jobs</div>
+        </div>
+        <form class="google-sign-in" method="post" action="register.php" onsubmit="return validateForm()">
+          <div class="already-have-an-account">
+            <div class="first-name-parent">
+              <div class="first-name">Name</div>
+              <input class="group-input" type="text" name="name" autocomplete="off" />
+            </div>
+            <div class="email-or-phone-number-parent">
+              <div class="email-or-phone">Email</div>
+              <input class="frame-child1" type="email" name="email" autocomplete="off" />
+            </div>
+            <div class="password-parent">
+              <div class="password">Password</div>
+              <input class="frame-child2" type="password" name="password" autocomplete="off" />
+            </div>
+            <div class="frame-container">
+              <div class="rectangle-parent">
+                <input class="rectangle-input" type="checkbox" />
+                <div class="remember-me">Remember me</div>
+              </div>
+              <div class="rectangle-group">
+                <input class="rectangle-input1" type="checkbox" />
+                <div class="i-agree-to-container">
+                  <span class="i-agree-to">I agree to all the </span>
+                  <span class="terms">Terms</span>
+                  <span class="and"> and </span>
+                  <span class="privacy-policy">Privacy policy </span>
+                </div>
+              </div>
+            </div>
+            <button class="rectangle-container" type="submit" name="submit" id="submitBtn" disabled>
+              <div class="rectangle-div"></div>
+              <div class="create-account1">Create account</div>
+            </button>
+          </div>
+          <div class="frame-div">
+            <div class="frame-parent1">
+              <div class="last-name-parent">
+                <div class="last-name">Mobile</div>
+                <input class="frame-child3" type="text" name="mobile" autocomplete="off" />
+              </div>
+              <div class="confirm-password-parent">
+                <div class="confirm-password">Confirm password</div>
+                <input class="frame-child5" type="password" name="confirm_password" autocomplete="off"
+                  onkeyup="checkPasswordMatch()" />
+                <div id="passwordMatch" style="color: red; font-size: small;"></div>
+              </div>
+              <div class="forgot-password-wrapper">
+                <div class="forgot-password">Forgot password?</div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+
+    function checkPasswordMatch() {
+      var password = document.querySelector('.frame-child2').value;
+      var confirmPassword = document.querySelector('.frame-child5').value;
+
+      if (password === confirmPassword) {
+        document.getElementById('passwordMatch').innerHTML = '';
+        document.getElementById('submitBtn').disabled = false;
+      } else {
+        document.getElementById('passwordMatch').innerHTML = 'Passwords do not match!';
+        document.getElementById('submitBtn').disabled = true;
+      }
+    }
+
+    function validateForm() {
+      var password = document.querySelector('.frame-child2').value;
+      var confirmPassword = document.querySelector('.frame-child5').value;
+
+      if (password !== confirmPassword) {
+        document.getElementById('passwordMatch').innerHTML = 'Passwords do not match';
+        return false;
+      }
+      else {
+        return true;
+      }
+    }
+
+  </script>
+</body>
+
+</html>

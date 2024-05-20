@@ -1,0 +1,45 @@
+1.
+What does HTML stand for?
+C. Hyper Text Markup Language
+options:
+"A. Hyper Type Multi Language",
+"B. Hyper Text Multiple Language",
+"C. Hyper Text Markup Language",
+"D. Home Text Multi Language",
+
+2.
+What is CSS?
+D. All of the mentioned
+options:
+"A. CSS is a style sheet language",
+"B. CSS is designed to separate the presentation and content, including layout, colors, and fonts",
+"C. CSS is the language used to style the HTML documents",
+"D. All of the mentioned",
+
+3. 
+Where in an HTML document is the correct place to include CSS in your HTML?
+C. In the <head> section
+options:
+"A. In the <body> section",
+"B. At the top of the document",
+"C. In the <head> section",
+"D. At the end of the document",
+
+4. 
+Which of the following CSS framework is used to create a responsive design?
+D. Bootstrap
+options:
+"A. Django",
+"B. Rails",
+"C. Laravel",
+"D. Bootstrap",
+
+5.
+Which of the following has introduced text, list, box, margin, border, color, and background properties?
+C. CSS
+options:
+"A. HTML",
+"B. PHP",
+"C. CSS",
+"D. Ajax",
+

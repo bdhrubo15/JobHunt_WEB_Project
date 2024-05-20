@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Quiz</title>
+
+    <style>
+        /* Style for the input field */
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+        }
+
+        /* Style for the placeholder text */
+        input[type="email"]::placeholder {
+            color: #999; /* Placeholder text color */
+        }
+
+        /* Style for the input field when it has focus */
+        input[type="email"]:focus {
+            border-color: #66afe9; /* Border color when input is focused */
+            outline: none; /* Remove the default focus outline */
+        }
+    </style>
+    
+</head>
+<body>
+    <main>
+        <!-- <nav>
+            navbar
+        </nav> -->
+        <div class="container">
+            <section class="quiz-section">
+                <div class="quiz-box">
+                    <h1>Codehal Quiz</h1>
+                    <div class="quiz-header">
+                        <span>Quiz Website</span>
+                        <span class="header-score">Score: 0 / 5</span>
+                    </div>
+                    <h2 class="question-text">What does HTML stand for?</h2>
+                    <div class="option-list">
+                    </div>
+                    <div class="quiz-footer">
+                        <span class="question-total">1 of 5 Questions</span>
+                        <button class="next-btn">Next</button>
+                    </div>
+                </div>
+                <div class="result-box">
+                    <h2>Quiz Result!</h2>
+                    <div class="percentage-container">
+                        <div class="circular-progress">
+                            <span class="progress-value">0%</span>
+                        </div>
+                        <span class="score-text">Your Score 0 out of 5</span>
+                    </div>
+                    <div class="buttons">
+                        <!-- <button type="submit" class="finishAttempt-btn"> <a href="popup.html">Finish Attempt</a></button> -->
+                        <form id="marksForm" method="post" action="marks.php">
+                            <input type="hidden" name="marks" id="marksInput">
+                            <input  autocomplete="off" type="email" name ="email" placeholder="Please insert your login email before finishing">
+                            <button type="button" class="finishAttempt-btn" onclick="finalAttempt()"> Finish Attempt</button>
+                        </form>
+                        <button class="goHome-btn">Go To Home</button>
+                    </div>
+                </div>
+            </section>
+            <section class="home">
+                <div class="home-content">
+                    <h1>Before Apply for the Position You Have to Attempt a Quiz. </h1>
+                    <p>!!! You have to obtain more than 60% to be eligible for the position !!!</p>
+                    <div class="btns">
+                        <button class="start-btn">
+                            Attempt Quiz
+                        </button>
+                        <button class="back-btn">
+                            Back
+                        </button>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+        
+    </main>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function finalAttempt() {
+            // Assuming progressEndValue holds the marks obtained
+            var marks = progressEndValue;
+
+            // Set the value of the marks input field
+            document.getElementById('marksInput').value = marks;
+
+            // Submit the form
+            document.getElementById('marksForm').submit();
+        }
+    </script>
+</body>
+</html>

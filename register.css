@@ -1,0 +1,731 @@
+body{
+    margin: 66px;
+}
+.bg-icon {
+    width: 627px;
+    height: 768px;
+    position: relative;
+    display: none;
+    max-width: 100%;
+  }
+  .start-you-jobs,
+  .you-can-do {
+    margin: 0;
+  }
+  .start-you-jobs-container {
+    margin: 0;
+    height: 61.4px;
+    flex: 1;
+    position: relative;
+    font-size: inherit;
+    letter-spacing: -0.02em;
+    line-height: 150%;
+    font-weight: 600;
+    font-family: inherit;
+    display: inline-block;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .start-you-jobs-today-you-can-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0 44.2px 0 45px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .frame-child,
+  .frame-item {
+    position: relative;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .frame-child {
+    align-self: stretch;
+    flex: 1;
+    background: linear-gradient(-35.07deg, #1e81ee, #007aff);
+  }
+  .frame-item {
+    width: 10px;
+    height: 10px;
+    border: 0 solid #fff;
+    box-sizing: border-box;
+  }
+  .ellipse-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-8xs) 0 0;
+  }
+  .ellipse-div,
+  .frame-inner {
+    height: 20px;
+    width: 15px;
+    position: relative;
+    z-index: 1;
+  }
+  .ellipse-div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 0 solid #fff;
+    box-sizing: border-box;
+  }
+  .ellipse-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5px 0 0;
+  }
+  .frame-parent,
+  .frame-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .frame-parent {
+    height: 20px;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .frame-wrapper {
+    align-self: stretch;
+    justify-content: center;
+    padding: 0 20px 0 21px;
+  }
+  .ellipse-parent,
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  .ellipse-parent {
+    align-self: stretch;
+    height: 552.4px;
+    gap: 38.4px;
+  }
+  .left {
+    width: 627px;
+    background-color: #4640de;
+    padding: 40px 67px 40px 66px;
+    box-sizing: border-box;
+    gap: 74.2px;
+    min-width: 627px;
+    max-width: 100%;
+  }
+  .create-account,
+  .for-applying-jobs {
+    position: relative;
+    letter-spacing: -0.02em;
+  }
+  .create-account {
+    margin: 0;
+    font-size: inherit;
+    line-height: 34px;
+    font-weight: 600;
+    font-family: inherit;
+  }
+  .for-applying-jobs {
+    font-size: 14px;
+    line-height: 20px;
+    color: #2d3748;
+    display: inline-block;
+    min-width: 106px;
+  }
+  .create-account-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 20px 13px 0;
+    gap: 8px;
+  }
+  .first-name,
+  .group-input {
+    position: relative;
+    box-sizing: border-box;
+  }
+  .first-name {
+    width: 86px;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    line-height: 20px;
+    font-family: "Bai Jamjuree";
+    color: #2d3748;
+    text-align: left;
+    display: inline-block;
+    padding-right: 20px;
+  }
+  .group-input {
+    border: 1px solid #e6e6e6;
+    outline: 0;
+    background-color: transparent;
+    align-self: stretch;
+    height: 48px;
+    border-radius: 5px;
+    min-width: 162px;
+  }
+  .first-name-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 17px 0 0;
+    gap: 4px;
+  }
+  .email-or-phone,
+  .frame-child1 {
+    position: relative;
+    box-sizing: border-box;
+  }
+  .email-or-phone {
+    width: 162px;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    line-height: 20px;
+    font-family: "Bai Jamjuree";
+    color: #2d3748;
+    text-align: left;
+    display: inline-block;
+    padding-right: 20px;
+  }
+  .frame-child1 {
+    border: 1px solid #e6e6e6;
+    outline: 0;
+    background-color: transparent;
+    align-self: stretch;
+    height: 48px;
+    border-radius: 5px;
+    width: 350px;
+    
+  }
+  .email-or-phone-number-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 17px 0 0;
+    gap: 4px;
+  }
+  .frame-child2,
+  .password {
+    position: relative;
+    box-sizing: border-box;
+  }
+  .password {
+    width: 80px;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    line-height: 20px;
+    font-family: "Bai Jamjuree";
+    color: #2d3748;
+    text-align: left;
+    display: inline-block;
+    padding-right: 20px;
+  }
+ 
+  .frame-child2 {
+    border: 1px solid #e6e6e6;
+    outline: 0;
+    background-color: transparent;
+    align-self: stretch;
+    height: 48px;
+    border-radius: 5px;
+    width: 350px;
+  }
+  .password-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 17px 4px 0;
+    gap: 4px;
+  }
+  .rectangle-input {
+    margin: 0;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    border-radius: 2px;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+  }
+  .remember-me {
+    position: relative;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    line-height: 20px;
+    font-family: 'Bai Jamjuree';
+    color: #2d3748;
+    text-align: left;
+    display: inline-block;
+    min-width: 90px;
+  }
+  .rectangle-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 20px 0 0;
+    gap: 12px;
+  }
+  .rectangle-input1 {
+    margin: 0;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    border-radius: 2px;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+  }
+  .i-agree-to {
+    color: #2d3748;
+  }
+  .terms {
+    color:#007aff;
+  }
+  .and {
+    color: #2d3748;
+  }
+  .privacy-policy {
+    color: #007aff;
+  }
+  .i-agree-to-container {
+    position: relative;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    line-height: 20px;
+    font-family: 'Bai Jamjuree';
+    text-align: left;
+  }
+  .frame-container,
+  .rectangle-group {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+  .frame-container {
+    flex-direction: column;
+    padding: 0 0 8px;
+    gap: 16px;
+  }
+  .rectangle-div {
+    height: 48px;
+    width: 270px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #007aff;
+    display: none;
+  }
+  .create-account1 {
+    flex: 1;
+    position: relative;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+    font-family: 'Bai Jamjuree';
+    color: #fff;
+    text-align: left;
+    z-index: 1;
+    padding-left: 70px;
+  }
+  .already-have-an-account,
+  .rectangle-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .rectangle-container {
+    cursor: pointer;
+    border: 0;
+    padding: 15px 78px;
+    background-color: #007aff;
+    width: 350px;
+    border-radius: 5px;
+    flex-direction: row;
+    box-sizing: border-box;
+    white-space: nowrap;
+  }
+  .rectangle-container:hover {
+    background-color: #26a1ff;
+  }
+  .already-have-an-account {
+    flex: 1;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .frame-child3,
+  .last-name {
+    position: relative;
+    box-sizing: border-box;
+  }
+  .last-name {
+    width: 85px;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    line-height: 20px;
+    font-family: 'Bai Jamjuree';
+    color: #2d3748;
+    text-align: left;
+    display: inline-block;
+    padding-right: 20px;
+  }
+  .frame-child3 {
+    border: 1px solid #e6e6e6;
+    outline: 0;
+    background-color: transparent;
+    align-self: stretch;
+    height: 48px;
+    border-radius: 5px;
+    min-width: 162px;
+  }
+  .last-name-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+  }
+  .date-of-birth {
+    font-size: 14px;
+  }
+  .mmddyy {
+    font-size: 10px;
+  }
+  .date-of-birth-container {
+    width: 157px;
+    position: relative;
+    letter-spacing: -0.02em;
+    line-height: 20px;
+    font-family: 'Bai Jamjuree';
+    color: #2d3748;
+    text-align: left;
+    display: inline-block;
+    box-sizing: border-box;
+    padding-right: 20px;
+  }
+  .first-name1,
+  .frame-child4 {
+    position: relative;
+    display: none;
+  }
+  .frame-child4 {
+    height: 48px;
+    width: 270px;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+  }
+  .first-name1 {
+    align-self: stretch;
+    width: 71px;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    line-height: 140%;
+    font-family: 'Poppins';
+    color: #2d3748;
+    text-align: left;
+  }
+  .calendar-month-outline-icon {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .date-of-birth-mmddyy-parent,
+  .group-div {
+    align-self: stretch;
+    display: flex;
+    align-items: flex-start;
+  }
+  .group-div {
+    height: 48px;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 16px 16px 12px;
+    white-space: nowrap;
+  }
+  .date-of-birth-mmddyy-parent {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 4px;
+  }
+  .confirm-password,
+  .frame-child5 {
+    position: relative;
+    box-sizing: border-box;
+  }
+  .confirm-password {
+    width: 131px;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    line-height: 20px;
+    font-family: 'Bai Jamjuree';
+    color: #2d3748;
+    text-align: left;
+    display: inline-block;
+    padding-right: 20px;
+  }
+  .frame-child5 {
+    border: 1px solid #e6e6e6;
+    outline: 0;
+    background-color: transparent;
+    align-self: stretch;
+    height: 48px;
+    border-radius: 5px;
+    min-width: 162px;
+  }
+  .confirm-password-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 4px;
+    gap: 4px;
+  }
+  .forgot-password {
+    width: 111px;
+    position: relative;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    line-height: 20px;
+    font-family: 'Bai Jamjuree';
+    color: #007aff;
+    text-align: right;
+    display: inline-block;
+    min-width: 111px;
+  }
+  .forgot-password-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0 1px;
+  }
+  .frame-parent1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .google-button-child {
+    height: 48px;
+    width: 269px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #2d3748;
+    display: none;
+  }
+  .iconfinder-google-1298745-1 {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    object-fit: cover;
+    min-height: 20px;
+    z-index: 1;
+  }
+  .sign-in-with-google {
+    position: relative;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+    font-family: 'Bai Jamjuree';
+    color: var(--white);
+    text-align: left;
+    display: inline-block;
+    min-width: 124px;
+    z-index: 1;
+  }
+  .sign-in-with-google-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-12xs) 0 0;
+  }
+  .google-button {
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-smi) 50px 15px;
+    background-color: #2d3748;
+    align-self: stretch;
+    height: 48px;
+    border-radius: 5px;
+    flex-direction: row;
+    box-sizing: border-box;
+    gap: 35px;
+    padding-top: 13px;
+    padding-left: 20px;
+    width: 350px;
+    margin-top: -4px;
+  }
+  .frame-div,
+  .google-button,
+  .google-sign-in {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .frame-div {
+    width: 270px;
+    flex-direction: column;
+    gap: 60px;
+    min-width: 270px;
+  }
+  .google-sign-in {
+    margin: 0;
+    align-self: stretch;
+    flex-direction: row;
+    gap: 15px;
+  }
+  .log-in {
+    color: #007aff;
+  }
+  .already-have-an-container {
+    position: relative;
+    letter-spacing: -0.02em;
+    line-height: 20px;
+  }
+  .login-page {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #2d3748;
+  }
+  .create-account-button,
+  .frame-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .frame-group {
+    align-self: stretch;
+    gap: 24px;
+  }
+  .create-account-button {
+    width: 572px;
+    min-width: 572px;
+    min-height: 643px;
+    max-width: 100%;
+    text-align: left;
+    color: #1d1d1d;
+  }
+  .login-page-default-states-1366 {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 72px;
+    letter-spacing: normal;
+    text-align: center;
+    font-size: 24px;
+    color: var(--white);
+    font-family: 'Bai Jamjuree';
+    margin-left: 12%;
+  }
+  @media screen and (max-width: 1200px) {
+    .create-account-button,
+    .left {
+      flex: 1;
+    }
+    .login-page-default-states-1366 {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .start-you-jobs-today-you-can-wrapper {
+      padding-left: var(--padding-3xl);
+      padding-right: var(--padding-3xl);
+      box-sizing: border-box;
+    }
+    .ellipse-parent {
+      gap: 19px 38.4px;
+    }
+    .left {
+      gap: 37px 74.2px;
+      padding: 26px 33px;
+      box-sizing: border-box;
+    }
+    .create-account-button,
+    .left {
+      min-width: 100%;
+    }
+    .login-page-default-states-1366 {
+      gap: 72px 36px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .start-you-jobs-container {
+      font-size: 19px;
+      line-height: 29px;
+    }
+    .left {
+      gap: 19px 74.2px;
+    }
+    .create-account {
+      font-size: 19px;
+      line-height: 27px;
+    }
+    .google-button,
+    .rectangle-container {
+      padding-left: 20px;
+      padding-right: 20px;
+      box-sizing: border-box;
+    }
+    .frame-div {
+      flex: 1;
+      gap: 30px 60px;
+    }
+    .google-sign-in {
+      flex-wrap: wrap;
+    }
+    .login-page-default-states-1366 {
+      gap: 72px 18px;
+    }
+  }
+
+  .input-bg {
+    flex: 1;
+    border-radius: 6px;
+    background-color: #f2f2f2;
+    border: 0.5px solid #e5e5e5;
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-direction: row;
+  }
+  .nav {
+    align-self: stretch;
+    height: 0.5px;
+    position: relative;
+    background-color: #e5e5e5;
+    width: 350px;
+}

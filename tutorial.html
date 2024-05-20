@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3 class="heading">Tutorial</h3>
+    <div class="tutorial-container">
+        <div class="main-video">
+            <div class="video">
+                <video src="1.mp4" controls autoplay></video>
+                <h3 class="title">1. Video 1</h3>
+            </div>
+        </div>
+        <div class="video-list">
+            <div class="vid tutorial-active">
+                <video src="1.mp4" muted></video>
+                <h3 class="title">1. Video 1</h3>
+            </div>
+            <div class="vid">
+                <video src="2.mp4" muted></video>
+                <h3 class="title">2. Video 1</h3>
+            </div>
+            <div class="vid">
+                <video src="3.mp4" muted></video>
+                <h3 class="title">3. Video 1</h3>
+            </div>
+            <div class="vid">
+                <video src="4.mp4" muted></video>
+                <h3 class="title">4. Video 1</h3>
+            </div>
+            <div class="vid">
+                <video src="5.mp4" muted></video>
+                <h3 class="title">5. Video 1</h3>
+            </div>
+            <div class="vid">
+                <video src="6.mp4" muted></video>
+                <h3 class="title">6. Video 1</h3>
+            </div>
+            <div class="vid">
+                <video src="7.mp4" muted></video>
+                <h3 class="title">7. Video 1</h3>
+            </div>
+            <div class="vid">
+                <video src="8.mp4" muted></video>
+                <h3 class="title">8. Video 1</h3>
+            </div>
+            <div class="vid">
+                <video src="1.mp4" muted></video>
+                <h3 class="title">9. Video 1</h3>
+            </div>
+            <div class="vid">
+                <video src="2.mp4" muted></video>
+                <h3 class="title">10. Video 1</h3>
+            </div>
+            <div class="vid">
+                <video src="3.mp4" muted></video>
+                <h3 class="title">11. Video 1</h3>
+            </div>
+            <div class="vid">
+                <video src="4.mp4" muted></video>
+                <h3 class="title">12. Video 1</h3>
+            </div>
+            <div class="vid">
+                <video src="5.mp4" muted></video>
+                <h3 class="title">13. Video 1</h3>
+            </div>
+            <div class="vid">
+                <video src="6.mp4" muted></video>
+                <h3 class="title">14. Video 1</h3>
+            </div>
+            <div class="vid">
+                <video src="7.mp4" muted></video>
+                <h3 class="title">15. Video 1</h3>
+            </div>
+            <div class="vid">
+                <video src="8.mp4" muted></video>
+                <h3 class="title">16. Video 1</h3>
+                <button style="background-color: #4640DE; border: none; border-radius: 4px; height: 56px;"><a
+                        style="text-decoration: none; color: aliceblue;" href="application.html">Finished
+                        Course</a></button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let listVideo = document.querySelectorAll('.video-list .vid');
+        let mainVideo = document.querySelector('.main-video video');
+        let title = document.querySelector('.main-video .title'); // Corrected selector
+
+        listVideo.forEach(video => {
+            video.onclick = () => {
+                listVideo.forEach(vid => vid.classList.remove('tutorial-active'));
+                video.classList.add('tutorial-active');
+                if (video.classList.contains('tutorial-active')) {
+                    let src = video.children[0].getAttribute('src');
+                    mainVideo.src = src;
+                    let text = video.children[1].innerHTML;
+                    title.innerHTML = text;
+                };
+            };
+        });
+    </script>
+    <!-- <script>
+        let listVideo = document.querySelectorAll('.video-list .vid');
+        let mainVideo = document.querySelector('.main-video video');
+        let title = document.querySelector('.main-video .title');
+
+        listVideo.forEach(video =>{
+            video.onclick = () =>{
+                listVideo.forEach(vid=> vid.classList.remove('active'));
+                video.classList.add('active');
+                if(video.classList.contains('active')){
+                    let src = video.children[0].getAttribute('src');
+                    mainVideo.src = src;
+                    let text = video.children[1].innerHTML;
+                    title.innerHTML = text;
+                };
+            };
+        });
+    </script> -->
+</body>
+
+</html>
